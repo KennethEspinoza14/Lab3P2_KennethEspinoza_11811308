@@ -3,12 +3,11 @@ package lab3p2_kennethespinoza;
 
 public class Personaje {
     
-    private int edad;
-    private String nombre, raza, nacionalidad, tipo_p, descripcion;
-    private double altura, peso;
+    protected int edad, HP;
+    protected String nombre, raza, nacionalidad, tipo_p, descripcion;
+    protected double altura, peso;
 
-    public Personaje( int edad, String nombre, String raza, String nacionalidad, String tipo_p,String descripcion, double altura, double peso) {
-      
+    public Personaje( int edad,int hp, String nombre, String raza, String nacionalidad, String tipo_p,String descripcion, double altura, double peso) {  
         this.edad = edad;
         this.nombre = nombre;
         this.raza = raza;
@@ -35,9 +34,7 @@ public class Personaje {
         this.nombre = nombre;
     }
 
-    public String getRaza() {
-        
-        
+    public String getRaza() {      
         return raza;
     }
 
@@ -84,6 +81,21 @@ public class Personaje {
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
+
+    public int getHP() {
+        return HP;
+    }
+
+    public void setHP(int HP) {
+        this.HP = HP;
+    }
+
+    @Override
+    public String toString() {
+        return "Personaje{" + "edad=" + edad + ", HP=" + HP + ", nombre=" + nombre + ", raza=" + raza + ", nacionalidad=" + nacionalidad + ", tipo_p=" + tipo_p + ", descripcion=" + descripcion + ", altura=" + altura + ", peso=" + peso + '}';
+    }
+    
+    
     
     
     
