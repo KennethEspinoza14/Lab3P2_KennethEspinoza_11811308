@@ -195,19 +195,31 @@ public class Lab3P2_KennethEspinoza {
                 break;
 
                 case 2: {
-
+                    
+                    
+                    
+                    
                 }
                 break;
                 case 3: {
-                    String salida1 = "";
+                    String salida = "";
                     for (Object j : personajes) {
-                        salida1 += personajes.indexOf(j) + "- " + j + "\n";
-                        System.out.println(salida1);
+                        salida += personajes.indexOf(j) + "- " + j + "\n";
+                        System.out.println(salida);
                     }
                 }
                 break;
                 case 4: {
-
+                    String salida = "";
+                    System.out.println("Ingrese el jugador que desea eliminar:");
+                    int pos = lea.nextInt();
+                     for (Object j : personajes) {
+                        salida += personajes.indexOf(j) + "- " + j + "\n";
+                        System.out.println(salida);
+                    }
+                    personajes.remove(pos);
+                    System.out.println("Personaje eliminado exitosamente");
+                    
                 }
                 break;
                 case 5: {
