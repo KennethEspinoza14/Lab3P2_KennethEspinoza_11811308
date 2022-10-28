@@ -72,7 +72,7 @@ public class Lab3P2_KennethEspinoza {
                             + "4 = Zebes\n"
                             + "5 = Crateria\n");
                     int n = lea.nextInt();
-                    switch (r) {
+                    switch (n) {
                         case 1: {
                             nacionalidad = "Norfair";
                         }
@@ -191,7 +191,7 @@ public class Lab3P2_KennethEspinoza {
 
                 case 2: {
 
-                    String salida = "";
+                    String salida = "", nacionalidad = "", raza = "";
                     for (Object j : personajes) {
                         salida += personajes.indexOf(j) + "- " + j + "\n";
                         System.out.println(salida);
@@ -212,25 +212,101 @@ public class Lab3P2_KennethEspinoza {
 
                     switch (mod) {
                         case 1: {
-                            System.out.println("Ingrese el nombre de su personaje");
+                            System.out.println("Ingrese el nombre de su personaje:");
                             String nombre = lea.next();
                             ((Personaje) personajes.get(pos)).setNombre(nombre);
                         }
                         break;
 
                         case 2: {
-                            
+                            System.out.println("Ingrese la edad de su personaje");
+                            int edad = lea.nextInt();
+                            ((Personaje) personajes.get(pos)).setEdad(edad);
                         }
                         break;
                         case 3: {
 
+                            System.out.println("Ingrese la nacionalidad de su personaje\n"
+                                    + "1 = Norfair\n"
+                                    + "2 = Brinstar\n"
+                                    + "3 = Maridia\n"
+                                    + "4 = Zebes\n"
+                                    + "5 = Crateria\n");
+                            int n = lea.nextInt();
+
+                            switch (n) {
+                                case 1: {
+                                    nacionalidad = "Norfair";
+                                    ((Personaje) personajes.get(pos)).setNacionalidad(nacionalidad);
+                                }
+                                break;
+                                case 2: {
+                                    nacionalidad = "Brinstar";
+                                    ((Personaje) personajes.get(pos)).setNacionalidad(nacionalidad);
+
+                                }
+                                break;
+                                case 3: {
+                                    nacionalidad = "Maridia";
+                                    ((Personaje) personajes.get(pos)).setNacionalidad(nacionalidad);
+
+                                }
+                                break;
+                                case 4: {
+                                    nacionalidad = "Zebes";
+                                    ((Personaje) personajes.get(pos)).setNacionalidad(nacionalidad);
+
+                                }
+                                break;
+                                case 5: {
+                                    nacionalidad = "Crateria";
+                                    ((Personaje) personajes.get(pos)).setNacionalidad(nacionalidad);
+
+                                }
+                                break;
+                            }
                         }
                         break;
                         case 4: {
+                            System.out.println("Ingrese la raza de su personaje\n"
+                                    + "1 = Humano\n"
+                                    + "2 = Enano\n"
+                                    + "3 = Elfo\n"
+                                    + "4 = Mediano\n");
+                            int r = lea.nextInt();
 
+                            switch (r) {
+                                case 1: {
+                                    raza = "Humano";
+                                    ((Personaje) personajes.get(pos)).setRaza(raza);
+                                }
+                                break;
+                                case 2: {
+                                    raza = "Enano";
+                                    ((Personaje) personajes.get(pos)).setRaza(raza);
+
+                                }
+                                break;
+                                case 3: {
+                                    raza = "Elfo";
+                                    ((Personaje) personajes.get(pos)).setRaza(raza);
+
+                                }
+                                break;
+                                case 4: {
+                                    raza = "Mediano";
+                                    ((Personaje) personajes.get(pos)).setRaza(raza);
+
+                                }
+                                break;
+
+                            }
                         }
                         break;
-                        case 5: {
+                        case 5: {                           
+                            System.out.println("Ingrese la descripcion de su personaje");
+                            String descripcion = lea.next();
+                            ((Personaje) personajes.get(pos)).setDescripcion(descripcion);
 
                         }
                         break;
