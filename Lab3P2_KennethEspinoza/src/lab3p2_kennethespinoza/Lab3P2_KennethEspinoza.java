@@ -129,7 +129,7 @@ public class Lab3P2_KennethEspinoza {
                                 System.out.println("Ingrese su tipo de invocacion:");
                                 invocacion = lea.next();
                                 
-                                Clerigo c = new Clerigo(edad, n, nombre, raza, nacionalidad, tipo_p, descripcion, altura, peso);
+                                Clerigo c = new Clerigo(dios, invocacion, edad, n, nombre, raza, nacionalidad, tipo_p, descripcion, altura, peso);
                                 personajes.add(c);
                                 
                             }
@@ -798,6 +798,8 @@ public class Lab3P2_KennethEspinoza {
                         salida += personajes.indexOf(j) + "- " + j + "\n";
                         System.out.println(salida);
                     }
+                    
+                    
                 }
                 break;
                 case 4: {

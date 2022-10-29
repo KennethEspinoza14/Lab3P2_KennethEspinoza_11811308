@@ -47,7 +47,7 @@ public class Barbaro extends Personaje {
 
     @Override
     public String toString() {
-        return "Barbaro{" + "ac=" + ac + ", cs=" + cs + ", exp=" + exp + ", arma=" + arma + '}';
+        return super.toString()+"Barbaro{" + "ac=" + ac + ", cs=" + cs + ", exp=" + exp + ", arma=" + arma + '}';
     }
 
     
