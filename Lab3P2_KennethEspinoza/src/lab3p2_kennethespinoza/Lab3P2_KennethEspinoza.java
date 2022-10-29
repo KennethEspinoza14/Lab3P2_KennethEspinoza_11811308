@@ -3,6 +3,7 @@ package lab3p2_kennethespinoza;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.Random;
 
 public class Lab3P2_KennethEspinoza {
     
@@ -33,7 +34,8 @@ public class Lab3P2_KennethEspinoza {
                 case 1: {
                     
                     String nombre, raza = "", nacionalidad = "", tipo_p = "", descripcion;
-                    int edad;                    
+                    int edad;
+                    int HP = 0;
                     double altura, peso;
                     
                     System.out.println("Ingrese el nombre de su personaje");
