@@ -35,9 +35,8 @@ public class Lab3P2_KennethEspinoza {
                     
                     String nombre, raza = "", nacionalidad = "", tipo_p = "", descripcion;
                     int edad;
-                    int HP = 0;
+                    int HP;
                     double altura, peso;
-                    
                     System.out.println("Ingrese el nombre de su personaje");
                     nombre = lea.next();
                     System.out.println("Ingrese la raza de su personaje\n"
@@ -130,7 +129,7 @@ public class Lab3P2_KennethEspinoza {
                                 dios = lea.next();
                                 System.out.println("Ingrese su tipo de invocacion:");
                                 invocacion = lea.next();
-                                
+                                                                                              
                                 Clerigo c = new Clerigo(dios, invocacion, edad, n, nombre, raza, nacionalidad, tipo_p, descripcion, altura, peso);
                                 personajes.add(c);
                                 
@@ -510,8 +509,7 @@ public class Lab3P2_KennethEspinoza {
                             + "5 = Descripcion\n"
                             + "6 = Altura\n"
                             + "7 = Peso\n"
-                            + "8 = dios\n"
-                            + "9 = tipo de invocacion\n");
+                            + "8 = Tipo de magia\n");
                             
                     int mod = lea.nextInt();
                     
@@ -653,8 +651,8 @@ public class Lab3P2_KennethEspinoza {
                             + "5 = Descripcion\n"
                             + "6 = Altura\n"
                             + "7 = Peso\n"
-                            + "8 = Arma\n"
-                            + "9 = exp\n");
+                            + "8 = Instrumento\n"
+                            + "9 = robos\n");
                             
                     int mod = lea.nextInt();
                     
